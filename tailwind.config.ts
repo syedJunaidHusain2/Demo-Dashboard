@@ -8,12 +8,29 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['"Inter"', 'sans-serif'],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        // Dark Mode Colors
+        dark: {
+          background: "#161616", 
+          darker: "#0D0D0D",    
+        },
+        // Light Mode Colors
+        light: {
+          background: "#f7fafc", 
+          lighter: "#ffffff",   
+        },
+        // Common Colors
+        primary: "#605BFF",   
+        text: {
+          slate: "#B0B0B0", 
+        },
       },
     },
   },
   plugins: [],
 };
+
 export default config;
